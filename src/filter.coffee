@@ -362,7 +362,7 @@ class filter
 					toprocess = []
 
 					content = "" 
-					content += "<span class = 'biom_valid_attr'>" + groupable_array[_i] + "</span><br/>"
+					content += "<span class = 'biom_valid_attr'>" + groupable_array[i] + "</span><br/>"
 
 					if groupable_array_content.length > 0
 						for j in [pointer_left..groupable_array_content.length-1]
