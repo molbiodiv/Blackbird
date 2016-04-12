@@ -16,8 +16,7 @@ class init
 			$('#GraphGallery').width(300);
 			$( "#GraphGallery .col3").width(window.screen.width - 30);
 
-		else if ( !navigator.userAgent.match(/Chrome/i) || !window.File || !window.FileReader || !window.FileList || !window.Blob )
-			# || navigator.userAgent.match(/Firefox/i) || navigator.userAgent.match(/Safari/) )  # Support only chrome now
+		else if ( !(navigator.userAgent.match(/Chrome/i) || navigator.userAgent.match(/Firefox/i)) || !window.File || !window.FileReader || !window.FileList || !window.Blob )
 			$('#NotSupported').show();
 			$('#top_sec').height(50);
 			$('#viz_container, #bottom_sec, .pageName, hr, .orange_btn, #readFile, #recent, #graphNameCont').hide();
