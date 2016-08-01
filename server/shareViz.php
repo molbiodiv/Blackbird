@@ -62,7 +62,7 @@ if(get_magic_quotes_gpc()) {
     $filterOptionsJson = stripslashes($filterOptionsJson);
 }
 $q = 'INSERT INTO SharedData (biom_filename, biom_file_hash, ip_address, from_email, from_name, to_email, to_name, notes, url_hash, visualization_id, layer_id, visualization_options, date_uploaded, countView, filter_options_json) VALUES ';
-$q .= '(:biom_filename, :biom_file_hash, :ip_address, :from_email, :from_name, :to_email, :to_name, :notes, :url_hash, :visualization_id, :layer_id, :visualization_options, NOW(), 0, :filter_options_json)';
+$q .= '(:biom_filename, :biom_file_hash, :ip_address, :from_email, :from_name, :to_email, :to_name, :notes, :url_hash, :visualization_id, :layer_id, :visualization_options, date(), 0, :filter_options_json)';
 $stmt = $db->prepare($q);
 $stmt->bindParam(':biom_file_hash', $_POST['biom_file_hash']);
 $stmt->bindParam(':ip_address', $_SERVER['REMOTE_ADDR']);
