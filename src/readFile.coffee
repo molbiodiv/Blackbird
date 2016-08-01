@@ -1,6 +1,7 @@
 class readFile
 	reader = new FileReader()
 	progress = document.querySelector('.percent')
+	Biom = require('biojs-io-biom').Biom;
 
 	constructor: () ->
 		db.open(
@@ -89,23 +90,28 @@ class readFile
 
 	# store new biom file to the browser indexeddb
 	readBlob: (file) =>
-		reader.onloadend = (evt) => 
+		reader.onloadend = (evt) =>
 			if evt.target.readyState == FileReader.DONE
 				# JSON.parse(reader.result)
-				biomToStore = {}
-				biomToStore.name = file.name
-				biomToStore.size = file.size
-				biomToStore.data = evt.target.result
-				d = new Date();
-				biomToStore.date = d.getUTCFullYear() + "-" + (d.getUTCMonth() + 1) + "-" + d.getUTCDate() + "T" + d.getUTCHours() + ":" + d.getUTCMinutes() + ":" + d.getUTCSeconds() + " UTC"
-				console.log @
-				if JSON.parse(biomToStore.data).format.indexOf("Biological Observation Matrix") != -1
-					@server.biom.add(biomToStore).done (item) => 
-						@currentData = item
-						setTimeout( "window.location.href = 'preview.html'", 2000)
-				else 
-					alert "Incorrect biom format field! Please check your file content!"
-		reader.readAsBinaryString(file)
+				Biom.parse('', {conversionServer: 'convert.php', arrayBuffer: evt.target.result}).then(
+					(biom) =>
+						biomToStore = {}
+						biomToStore.name = file.name
+						biomToStore.size = file.size
+						biom.write().then(
+							(biomData) =>
+								biomToStore.data = biomData
+								d = new Date();
+								biomToStore.date = d.getUTCFullYear() + "-" + (d.getUTCMonth() + 1) + "-" + d.getUTCDate() + "T" + d.getUTCHours() + ":" + d.getUTCMinutes() + ":" + d.getUTCSeconds() + " UTC"
+								console.log @
+								@server.biom.add(biomToStore).done (item) =>
+									@currentData = item
+									setTimeout( "window.location.href = 'preview.html'", 2000)
+						)
+					(fail) =>
+						alert "Error loading biom file!"
+				)
+		reader.readAsArrayBuffer(file)
 
 	# list 10 most recent files uploaded to this browser
 	listRecentFiles: () => 
