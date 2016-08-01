@@ -1,23 +1,7 @@
--- phpMyAdmin SQL Dump
--- version 3.5.2
--- http://www.phpmyadmin.net
---
--- Host: internal-db.s179208.gridserver.com
--- Generation Time: May 21, 2014 at 04:56 PM
--- Server version: 5.1.72-rel14.10
--- PHP Version: 5.3.27
-
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+-- sqlite
 
 --
--- Database: `db179208_phinch`
+-- Database: `phinch`
 --
 
 -- --------------------------------------------------------
@@ -27,10 +11,9 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `Layer` (
-  `layer_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(60) NOT NULL,
-  PRIMARY KEY (`layer_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+  `layer_id` int(10) PRIMARY KEY,
+  `name` varchar(60) NOT NULL
+);
 
 --
 -- Dumping data for table `Layer`
@@ -52,7 +35,7 @@ INSERT INTO `Layer` (`layer_id`, `name`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `SharedData` (
-  `SharedData_id` int(10) NOT NULL AUTO_INCREMENT,
+  `SharedData_id` int(10) PRIMARY KEY,
   `biom_filename` varchar(255) NOT NULL,
   `biom_file_hash` varchar(32) NOT NULL,
   `ip_address` varchar(15) NOT NULL,
@@ -61,14 +44,14 @@ CREATE TABLE IF NOT EXISTS `SharedData` (
   `to_email` varchar(255) NOT NULL,
   `to_name` varchar(255) NOT NULL,
   `notes` text NOT NULL,
+  `filter_options_json` text NOT NULL,
   `url_hash` varchar(32) NOT NULL,
   `visualization_id` int(10) NOT NULL,
   `layer_id` int(10) NOT NULL,
   `visualization_options` text NOT NULL,
   `date_uploaded` datetime NOT NULL,
-  `countView` int(10) NOT NULL,
-  PRIMARY KEY (`SharedData_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+  `countView` int(10) NOT NULL
+);
 
 -- --------------------------------------------------------
 
@@ -77,10 +60,9 @@ CREATE TABLE IF NOT EXISTS `SharedData` (
 --
 
 CREATE TABLE IF NOT EXISTS `Visualization` (
-  `visualization_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(60) NOT NULL,
-  PRIMARY KEY (`visualization_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+  `visualization_id` int(10) PRIMARY KEY,
+  `name` varchar(60) NOT NULL
+);
 
 --
 -- Dumping data for table `Visualization`
@@ -92,7 +74,3 @@ INSERT INTO `Visualization` (`visualization_id`, `name`) VALUES
 (3, 'sankeyDiagram'),
 (4, 'donutPartition'),
 (5, 'attributesColumn');
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
