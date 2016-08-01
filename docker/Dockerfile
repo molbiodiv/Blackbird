@@ -12,7 +12,9 @@ RUN apt-get update && apt-get --assume-yes install \
     zip \
     nodejs \
     npm \
-    imagemagick
+    imagemagick \
+    sqlite3 \
+    php7.0-sqlite3
 
 # Install composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
