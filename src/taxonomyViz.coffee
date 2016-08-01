@@ -1776,31 +1776,28 @@ class taxonomyViz
 		layerName = layerNameArr[LayerID - 1]
 		vizName = vizNameArr[VizID-1]
 
-		if @validateEmail($('#sharingInfo #shareFromEmail').val()) and @validateEmail($('#sharingInfo #shareToEmail').val())
-			shareFlag = true
-			$('#sharingInfo .shareForm input, #sharingInfo .shareForm label, #sharingInfo .shareForm textarea').hide();
-			$('#sharingInfo .results').remove();
-			$('#sharingInfo .results').show();			
-			results = d3.select('#sharingInfo').append('div').attr('class','results')
-			results.append('div').html('Your visualization has been shared. <br/> Wait until the link is generated below: ')
-			@shareData = {
-				from_email: $('#sharingInfo #shareFromEmail').val(),
-				to_email: $('#sharingInfo #shareToEmail').val(),
-				from_name: $('#sharingInfo #shareFromName').val(),
-				to_name: $('#sharingInfo #shareToName').val(),
-				notes: $('#sharingInfo #shareNotes').val(),
-				biom_file_hash: @shareHash,
-				layer_name: layerName,
-				filter_options_json: JSON.stringify(filterOptionJSON),
-				viz_name: vizName
-			}
-			if @shareHashExists is 'true'
-				@shareRequest()
-			else
-				@generateBiomZip()
+		shareFlag = true
+		$('#sharingInfo .shareForm input, #sharingInfo .shareForm label, #sharingInfo .shareForm textarea').hide();
+		$('#sharingInfo .results').remove();
+		$('#sharingInfo .results').show();
+		results = d3.select('#sharingInfo').append('div').attr('class','results')
+		results.append('div').html('Your visualization has been shared. <br/> Wait until the link is generated below: ')
+		@shareData = {
+			from_email: $('#sharingInfo #shareFromEmail').val(),
+			to_email: $('#sharingInfo #shareToEmail').val(),
+			from_name: $('#sharingInfo #shareFromName').val(),
+			to_name: $('#sharingInfo #shareToName').val(),
+			notes: $('#sharingInfo #shareNotes').val(),
+			biom_file_hash: @shareHash,
+			layer_name: layerName,
+			filter_options_json: JSON.stringify(filterOptionJSON),
+			viz_name: vizName
+		}
+		if @shareHashExists is 'true'
+			@shareRequest()
 		else
-			alert("Invalid email address ... ")
-
+			@generateBiomZip()
+		
 	generateBiomZip: () =>
 		biomData = JSON.stringify(biom)
 		console.log biomData.length
