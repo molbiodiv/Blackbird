@@ -1,0 +1,58 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "7fad032c3038e1ecc2dbc6260d060dfc",
+    "content-hash": "4114be8a0d21bc110947ad9550c52824",
+    "packages": [
+        {
+            "name": "iimog/biom-conversion-server",
+            "version": "v0.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/iimog/biom-conversion-server.git",
+                "reference": "2666a3e3db246566110fbb1fb7ac6f11b0d1d152"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/iimog/biom-conversion-server/zipball/2666a3e3db246566110fbb1fb7ac6f11b0d1d152",
+                "reference": "2666a3e3db246566110fbb1fb7ac6f11b0d1d152",
+                "shasum": ""
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
+                "phpunit/phpunit": "^5.4",
+                "satooshi/php-coveralls": "^1.0",
+                "squizlabs/php_codesniffer": "2.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "biomcs\\": "src/biomcs/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Markus Ankenbrand",
+                    "email": "markus.ankenbrand@uni-wuerzburg.de"
+                }
+            ],
+            "description": "Conversion tool for the biom format",
+            "time": "2016-07-29 14:04:53"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
