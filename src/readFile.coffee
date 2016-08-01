@@ -48,12 +48,7 @@ class readFile
 		if files.length == 0
 			alert "Please select a file!"
 		else 	
-			filetype = files[0].name.split("").reverse().join("").split(".")[0].toLowerCase()
-			acceptable_filetype = ["moib",  "txt"]
-			if acceptable_filetype.indexOf(filetype) == -1
-				alert "Please upload .biom or or .txt file!"
-			else 
-				@readBlob(files[0])
+			@readBlob(files[0])
 
 	handleFileSelect: (evt) =>
 		progress.style.width = '0%'
