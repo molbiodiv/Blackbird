@@ -29,15 +29,13 @@ Second, add your sample metadata to your .biom file. Where your input file (-i) 
 ```Python
 biom add-metadata -i otu_table_mc2_w_tax.biom -o otu_table_mc2_w_tax_and_metadata.biom -m sample_metadata_mapping_file.txt
 ```
-## Run the repo locally
-Phinch is written in CoffeeScript (http://coffeescript.org/), a programming language that compiles into JavaScript. To install Phinch locally, you will need to install CoffeeScript and compile the code, as follows:
+## Run your own Phinch server
+Use docker to run your own Phinch server locally:
 ```
-# install CoffeeScript
-sudo npm install -g coffee-script
-
-# cd to your local phinch folder 
-coffee -o scripts/ -cw src/ 
+# run on port 8081 (for another free port exchange the 8081 with that port number)
+docker run -d --publish 8081:80 --name phinch iimog/phinch
 ```
+You can then navigate your web browser to [http://localhost:8081/]().
 
 ## Libraries 
 D3: http://d3js.org/ <br>
