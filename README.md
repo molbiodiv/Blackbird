@@ -1,10 +1,22 @@
 ![VizGallery](https://raw.githubusercontent.com/shujianbu/Phinch/master/viz_gallery.png)
 
-## About 
+## About the original project
 
 [Phinch](http://phinch.org/) is an open-source framework for visualizing biological data, funded by a grant from the [Alfred P. Sloan foundation](http://www.sloan.org/). This project represents an interdisciplinary collaboration between [Pitch Interactive](http://www.pitchinteractive.com/beta/index.php), a data visualization studio in Oakland, CA, and biological researchers at [UC Davis](http://www.ucdavis.edu/). Whether it's genes, proteins, or microbial species, Phinch provides an interactive visualization tool that allows users to explore and manipulate large biological datasets. 
 
 [Phinch](http://phinch.org/) is optimized for use in the Chrome browser. It currently supports downstream analyses of .biom files ([Biological Observation Matrix](http://biom-format.org/), a JSON-formatted file type typically used to represent marker gene OTUs or metagenomic data). All sample metadata and taxonomy/ontology information MUST be embedded in the .biom file before being uploaded. 
+
+## About this fork
+
+This fork addresses a couple of practical limitations. All changes are made available under the same license as the original project (BSD 2-clause). Here is an overview over the changes:
+
+ - All browsers are allowed (original project only allows Chrome)
+ - BIOM format versions 2 is supported (in addition to version 1) by integrating biom-conversion-server and biojs-io-biom
+ - A few bugs are fixed (e.g. [#49](https://github.com/PitchInteractiveInc/Phinch/pull/49))
+ - Shared links are not sent via email automatically
+ - A docker image is provided for self hosting
+
+I'll be happy to help port my changes back to the main project.
 
 ## Data
 
