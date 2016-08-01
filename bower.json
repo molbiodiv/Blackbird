@@ -1,0 +1,21 @@
+{
+  "name": "Phinch",
+  "homepage": "https://github.com/iimog/Phinch",
+  "authors": [
+    ""
+  ],
+  "description": "",
+  "main": "",
+  "license": "BSD",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "biojs-io-biom": "^0.1.4"
+  }
+}

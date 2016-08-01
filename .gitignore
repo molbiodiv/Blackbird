@@ -27,3 +27,4 @@ biomFiles/
 scripts
 node_modules
 server/dbconfig.php
+bower_components
