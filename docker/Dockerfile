@@ -11,7 +11,8 @@ RUN apt-get update && apt-get --assume-yes install \
     libapache2-mod-php \
     zip \
     nodejs \
-    npm
+    npm \
+    imagemagick
 
 # Install composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
