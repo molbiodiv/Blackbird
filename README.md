@@ -1,4 +1,4 @@
-![VizGallery](https://raw.githubusercontent.com/shujianbu/Phinch/master/viz_gallery.png)
+![VizGallery](https://raw.githubusercontent.com/iimog/Phinch/master/viz_gallery.png)
 
 ## About the original project
 
