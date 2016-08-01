@@ -36,7 +36,7 @@ RUN echo "export LC_ALL=C.UTF-8" >>/etc/apache2/envvars
 RUN echo "export LANG=C.UTF-8" >>/etc/apache2/envvars
 
 # Clone git repo
-RUN git clone -b quickstart https://github.com/iimog/Phinch.git /var/www/html
+RUN git clone https://github.com/iimog/Phinch.git /var/www/html
 RUN cd /var/www/html && composer install
 RUN cd /var/www/html && bower install --allow-root
 RUN cd /var/www/html && coffee -o scripts -c src
