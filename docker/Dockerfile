@@ -44,6 +44,9 @@ RUN cd /var/www/html && bower install --allow-root
 RUN cd /var/www/html && coffee -o scripts -c src
 RUN cd /var/www/html/vendor/iimog/biom-conversion-server && conda install --yes --file explicit-conda-spec.txt
 RUN cp /var/www/html/vendor/iimog/biom-conversion-server/convert.php /var/www/html
+RUN cd /var/www/html/biomFiles/ && sqlite3 phinch.sqlite <../data/dbschema.sql
+RUN chmod -R www-data:www-data /var/www/html/biomFiles
+RUN cp /var/www/html/server/dbconfig-sqlite.php /var/www/html/server/dbconfig.php
 
 # Add custom php ini
 ADD php.ini /etc/php/7.0/apache2/php.ini
