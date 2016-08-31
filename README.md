@@ -1,4 +1,4 @@
-![VizGallery](https://raw.githubusercontent.com/iimog/Phinch/master/viz_gallery.png)
+![VizGallery](https://raw.githubusercontent.com/iimog/Blackbird/master/viz_gallery.png)
 
 ## About the original project
 
@@ -20,7 +20,7 @@ I'll be happy to help port my changes back to the main project.
 
 ## Data
 
-Phinch supports both "sparse" and "dense" <b>[BIOM](http://biom-format.org/)</b> formats (although sparse .biom files are highly recommended, since the file size is much smaller). In [QIIME](http://qiime.org/), users can prepare the .biom file by executing the following commands:
+Blackbird supports both "sparse" and "dense" <b>[BIOM](http://biom-format.org/)</b> formats (although sparse .biom files are highly recommended, since the file size is much smaller). In [QIIME](http://qiime.org/), users can prepare the .biom file by executing the following commands:
 ```Python
 make_otu_table.py -i final_otu_map_mc2.txt -o otu_table_mc2_w_tax.biom -t rep_set_tax_assignments.txt
 ```
@@ -29,11 +29,11 @@ Second, add your sample metadata to your .biom file. Where your input file (-i) 
 ```Python
 biom add-metadata -i otu_table_mc2_w_tax.biom -o otu_table_mc2_w_tax_and_metadata.biom -m sample_metadata_mapping_file.txt
 ```
-## Run your own Phinch server
-Use docker to run your own Phinch server locally:
+## Run your own Blackbird server
+Use docker to run your own Blackbird server locally:
 ```
 # run on port 8081 (for another free port exchange the 8081 with that port number)
-docker run -d --publish 8081:80 --name phinch iimog/phinch
+docker run -d --publish 8081:80 --name blackbird iimog/blackbird
 ```
 You can then navigate your web browser to [http://localhost:8081/]().
 
@@ -53,5 +53,11 @@ lz-string: https://github.com/pieroxy/lz-string<br>
 md5-js: https://github.com/wbond/md5-js<br>
 biom-conversion-server: https://github.com/iimog/biom-conversion-server<br>
 biojs-io-biom: https://github.com/iimog/biojs-io-biom<br>
+
 ## License
 The BSD 2-Clause License
+
+## Logo
+The Blackbird logo slightly resembles the Phinch logo using the Blackbird-Silhouette from [openclipart.org](https://openclipart.org/detail/220754/blackbird-silhouette) (public domain) and the Hanken font from [fontlibrary.org](https://fontlibrary.org/en/font/hanken) (SIL Open Font License).
+
+![Blackbird Logo](https://raw.githubusercontent.com/iimog/Blackbird/master/img/blackbird_logo_font2path.svg)
