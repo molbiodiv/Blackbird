@@ -60,4 +60,4 @@ The BSD 2-Clause License
 ## Logo
 The Blackbird logo slightly resembles the Phinch logo using the Blackbird-Silhouette from [openclipart.org](https://openclipart.org/detail/220754/blackbird-silhouette) (public domain) and the Hanken font from [fontlibrary.org](https://fontlibrary.org/en/font/hanken) (SIL Open Font License).
 
-![Blackbird Logo](https://raw.githubusercontent.com/iimog/Blackbird/master/img/blackbird_logo_font2path.svg)
+![Blackbird Logo](https://raw.githubusercontent.com/iimog/Blackbird/master/img/blackbird_logo.png)
