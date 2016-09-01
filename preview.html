@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>PHINCH - A framework for visualizing bio data</title>
+    <title>Blackbird - Fork of Phinch</title>
     <meta name="description" content="Phinch is an open-source framework for visualizing biological data. Whether it's genes, proteins, or microbial species, Phinch provides an interactive visualization tool that allows users to explore and manipulate large biological datasets." />
     <meta name="keywords" content="data viz, data visualization, sloan founcation, uc davis, biom, biological data, open-source, framework" />
     <meta name="viewport" content="width=device-width">
@@ -15,15 +15,14 @@
     <meta property="og:site_name" content="PHINCH">
 
     <!-- Google Analytics -->
-    <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-50346302-1']);
-        _gaq.push(['_trackPageview']);
-        (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-83528924-1', 'auto');
+        ga('send', 'pageview');
     </script>
 
     <!-- Disable Console Msg -->
@@ -83,7 +82,7 @@
     <section id = "NotSupported">
         <br /> <br />
         <h1>NOT SUPPORTED</h1>
-        <p>Chrome Browser Recommended! Your browser does not support the Phinch framework!</p>
+        <p>Your browser lacks required features so it does not support the Blackbird framework! Chrome Browser Recommended!</p>
     </section>
 
     <section id = "bottom_sec">
