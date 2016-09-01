@@ -225,7 +225,7 @@ class taxonomyViz
 						)
 
 						# 8 export  
-						$('#export').click( @downloadChart )
+						$('#export').click( @downloadChartSVG )
 
 						# 9 share
 						$('#share').click( @shareViz )
