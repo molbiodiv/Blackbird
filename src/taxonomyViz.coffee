@@ -1726,7 +1726,7 @@ class taxonomyViz
 		w.addEventListener('message', (e) =>
 			d = new Date()
 			dateStamp = d.getUTCFullYear() + "-" + (d.getUTCMonth() + 1) + "-" + d.getUTCDate() + "T" + d.getUTCHours() + ":" + d.getUTCMinutes() + ":" + d.getUTCSeconds() + "UTC"
-			saveAs(e.data, "phinch-" + dateStamp + ".zip");
+			saveAs(e.data, "blackbird-" + dateStamp + ".zip");
 			$('#downloadFile i').removeClass('icon-spinner icon-spin')
 			$('#downloadFile i').addClass('icon-download')
 
