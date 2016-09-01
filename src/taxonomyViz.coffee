@@ -1710,7 +1710,7 @@ class taxonomyViz
 		$('#downloadPreview img').attr('src', '');
 		$('#downloadPreview a').attr('href', '');
 		$('#exportHeader').html('Generating Image')
-		$('#exportShareDiv .icon-remove').click( (e) -> $('#exportShareDiv').fadeOut(500); ) 
+		$('#exportShareDiv .icon-remove').click( (e) -> $('#exportShareDiv').fadeOut(500) )
 
 		svg = $('svg')
 		svgStringData = svg.wrap('<p>').parent().html()
