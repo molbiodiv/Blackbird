@@ -224,8 +224,10 @@ class taxonomyViz
 							setTimeout(@doZip, 250)
 						)
 
-						# 8 export  
+						# 8a export svg
 						$('#export').click( @downloadChartSVG )
+						# 8b export png
+						$('#export_png').click( @downloadChart )
 
 						# 9 share
 						$('#share').click( @shareViz )
