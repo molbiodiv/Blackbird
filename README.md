@@ -10,11 +10,12 @@
 
 This fork addresses a couple of practical limitations. All changes are made available under the same license as the original project (BSD 2-clause). Here is an overview over the changes:
 
- - All browsers are allowed (original project only allows Chrome)
+ - All desktop browsers are allowed (original project only allows Chrome)
  - [BIOM format](http://biom-format.org/) version 2 is supported (in addition to version 1) by integrating [biom-conversion-server](https://github.com/iimog/biom-conversion-server) and [biojs-io-biom](https://github.com/iimog/biojs-io-biom)
  - A few bugs are fixed (e.g. [#49](https://github.com/PitchInteractiveInc/Phinch/pull/49))
  - Shared links are not sent via email automatically
  - A docker image is provided for self hosting
+ - Export is in svg rather than png format ([#43](https://github.com/PitchInteractiveInc/Phinch/issues/43))
 
 I'll be happy to help port my changes back to the main project.
 
