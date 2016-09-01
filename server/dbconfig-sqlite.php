@@ -1,3 +1,3 @@
 <?php
-$db = new PDO('sqlite:../biomFiles/phinch.sqlite');
+$db = new PDO('sqlite:../biomFiles/blackbird.sqlite');
 ?>
