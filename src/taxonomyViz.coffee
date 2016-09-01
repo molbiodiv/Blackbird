@@ -1718,6 +1718,12 @@ class taxonomyViz
 		exportEndpoint = backendServer + 'export.php'
 		$.post(exportEndpoint, postData, @exportCallback)
 
+	downloadChartSVG: () =>
+		svg = $('svg')
+		svgStringData = svg.wrap('<p>').parent().html()
+    blob = new Blob([svgStringData], { type: "image/svg+xml;charset=utf-8" })
+    saveAs(blob, "Blackbird.svg");
+
 	doZip: () ->
 
 		obj_log = {'selected_sample': selected_samples, 'selected_sample_phinchID': selected_phinchID_array, 'selected_attributes_array': selected_attributes_array, 'selected_attributes_units_array': selected_attributes_units_array}
