@@ -1,4 +1,4 @@
-![VizGallery](https://raw.githubusercontent.com/iimog/Blackbird/master/viz_gallery.png)
+![VizGallery](https://raw.githubusercontent.com/molbiodiv/Blackbird/master/viz_gallery.png)
 
 ## About the original project
 
@@ -11,7 +11,7 @@
 This fork addresses a couple of practical limitations. All changes are made available under the same license as the original project (BSD 2-clause). Here is an overview over the changes:
 
  - All desktop browsers are allowed (original project only allows Chrome)
- - [BIOM format](http://biom-format.org/) version 2 is supported (in addition to version 1) by integrating [biom-conversion-server](https://github.com/iimog/biom-conversion-server) and [biojs-io-biom](https://github.com/iimog/biojs-io-biom)
+ - [BIOM format](http://biom-format.org/) version 2 is supported (in addition to version 1) by integrating [biom-conversion-server](https://github.com/molbiodiv/biom-conversion-server) and [biojs-io-biom](https://github.com/molbiodiv/biojs-io-biom)
  - A few bugs are fixed (e.g. [#49](https://github.com/PitchInteractiveInc/Phinch/pull/49))
  - Shared links are not sent via email automatically
  - A docker image is provided for self hosting
@@ -52,8 +52,8 @@ JSZip: http://stuk.github.io/jszip/<br>
 Lo-Dash: http://lodash.com/<br>
 lz-string: https://github.com/pieroxy/lz-string<br>
 md5-js: https://github.com/wbond/md5-js<br>
-biom-conversion-server: https://github.com/iimog/biom-conversion-server<br>
-biojs-io-biom: https://github.com/iimog/biojs-io-biom<br>
+biom-conversion-server: https://github.com/molbiodiv/biom-conversion-server<br>
+biojs-io-biom: https://github.com/molbiodiv/biojs-io-biom<br>
 
 ## License
 The BSD 2-Clause License
@@ -61,4 +61,4 @@ The BSD 2-Clause License
 ## Logo
 The Blackbird logo slightly resembles the Phinch logo using the Blackbird-Silhouette from [openclipart.org](https://openclipart.org/detail/220754/blackbird-silhouette) (public domain) and the Hanken font from [fontlibrary.org](https://fontlibrary.org/en/font/hanken) (SIL Open Font License).
 
-![Blackbird Logo](https://raw.githubusercontent.com/iimog/Blackbird/master/img/blackbird_logo.png)
+![Blackbird Logo](https://raw.githubusercontent.com/molbiodiv/Blackbird/master/img/blackbird_logo.png)
