@@ -103,7 +103,7 @@ if(isset($_POST['biomFile'])) {
 
 $stmt->execute();
 //execute query
-$link = 'http://phinch.org/viz.html?shareID=' . $urlHash;
+$link = '/viz.html?shareID=' . $urlHash;
 echo json_encode(array('status' => 'ok', 'urlHash' => $urlHash));
 
 function generateRandomString($length = 10) {

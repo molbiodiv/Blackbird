@@ -573,7 +573,7 @@ class filter
 	downloadPhinch: (param) ->
 		
 		that = this
-		phinch.generated_by = 'Phinch 1.0'
+		phinch.generated_by = 'Blackbird 1.2'
 		phinch.date = new Date()
 
 		# Step 1 - get data matrix ready 
