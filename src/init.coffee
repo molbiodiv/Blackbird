@@ -16,11 +16,11 @@ class init
 			$('#GraphGallery').width(300);
 			$( "#GraphGallery .col3").width(window.screen.width - 30);
 
-		else if ( !(navigator.userAgent.match(/Chrome/i) || navigator.userAgent.match(/Firefox/i)) || !window.File || !window.FileReader || !window.FileList || !window.Blob )
+		else if ( !window.File || !window.FileReader || !window.FileList || !window.Blob )
 			$('#NotSupported').show();
 			$('#top_sec').height(50);
 			$('#viz_container, #bottom_sec, .pageName, hr, .orange_btn, #readFile, #recent, #graphNameCont').hide();
-			alert('Chrome Browser Recommended! Your browser does not support the Phinch framework!');
+			alert('Your browser lacks required features so it does not support the Blackbird framework! Chrome Browser Recommended!');
 		else
 			@helpMenu()
 			switch page
