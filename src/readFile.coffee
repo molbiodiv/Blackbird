@@ -22,7 +22,7 @@ class readFile
 		# load test file
 		document.getElementById('loadTestFile').addEventListener('click', (evt) =>
 			$('#loadTestFile').html('loading...&nbsp;&nbsp;<i class="icon-spinner icon-spin icon-large"></i>');
-			hostURL = 'http://' + window.location.host + window.location.pathname.substr(0, window.location.pathname.lastIndexOf('/'))
+			hostURL = '//' + window.location.host + window.location.pathname.substr(0, window.location.pathname.lastIndexOf('/'))
 			testfile = hostURL + '/data/testdata.biom'  ## Dev TODO http://phinch.org/data/testdata.biom
 			$.get(testfile, (testdata) => 
 				biomToStore = {}
