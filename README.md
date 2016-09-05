@@ -12,10 +12,10 @@ This fork addresses a couple of practical limitations. All changes are made avai
 
  - All desktop browsers are allowed (original project only allows Chrome)
  - [BIOM format](http://biom-format.org/) version 2 is supported (in addition to version 1) by integrating [biom-conversion-server](https://github.com/molbiodiv/biom-conversion-server) and [biojs-io-biom](https://github.com/molbiodiv/biojs-io-biom)
- - A few bugs are fixed (e.g. [#49](https://github.com/PitchInteractiveInc/Phinch/pull/49))
+ - A few bugs are fixed (e.g. [Phinch#49](https://github.com/PitchInteractiveInc/Phinch/pull/49))
  - Shared links are not sent via email automatically
  - A docker image is provided for self hosting
- - Export is in svg rather than png format ([#43](https://github.com/PitchInteractiveInc/Phinch/issues/43))
+ - Export is in svg rather than png format ([Phinch#43](https://github.com/PitchInteractiveInc/Phinch/issues/43))
 
 I'll be happy to help port my changes back to the main project.
 
