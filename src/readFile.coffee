@@ -93,6 +93,7 @@ class readFile
 						biomToStore = {}
 						biomToStore.name = file.name
 						biomToStore.size = file.size
+						biom.matrix_type = 'sparse'
 						biom.write().then(
 							(biomData) =>
 								biomToStore.data = biomData
