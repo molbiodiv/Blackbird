@@ -31,6 +31,7 @@ td { border: 2px #ccc solid; color: #ababab; height: 26px;}
 #help { float: right; margin: -25px 20px 0 0; font-size: 16px; text-decoration: none; color: #000;}
 #help:hover { border-bottom: 4px solid #241f20; cursor: pointer; -webkit-transition:.2s; -moz-transition:.2s; -o-transition:.2s; transition:.2s;}
 #dialog-modal { display: none; height: 510px !important; overflow-y: scroll;}
+#dialog-ga { display: none; height: 510px !important; overflow-y: scroll;}
 .descPara { font-family: 'Varela Round', sans-serif; margin: 20px 0;}
 .descPara a { outline: 0; color: #241f20 !important;}
 .descPara span { font-size: 15px; font-weight: 800;}
