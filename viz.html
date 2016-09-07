@@ -29,6 +29,14 @@
 
     <!-- Disable Console Msg -->
     <script type="text/javascript">
+        var gaProperty = 'UA-83528924-1';
+
+        // Disable tracking if the opt-out cookie exists.
+        var disableStr = 'ga-disable-' + gaProperty;
+        if (document.cookie.indexOf(disableStr + '=true') > -1) {
+            window[disableStr] = true;
+        }
+
         if (!(window.console && console.log)) {(function() {
             var noop = function() {};
             var methods = ['assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error', 'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log', 'markTimeline', 'profile', 'profileEnd', 'markTimeline', 'table', 'time', 'timeEnd', 'timeStamp', 'trace', 'warn'];
