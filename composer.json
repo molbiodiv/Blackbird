@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "This is Blackbird a fork of the wonderful Phinch project (phinch.org)",
     "require": {
-        "iimog/biom-conversion-server": "^0.3.0"
+        "iimog/biom-conversion-server": "^1.0.0"
     },
     "license": "BSD-2-Clause",
     "authors": [

@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7fad032c3038e1ecc2dbc6260d060dfc",
-    "content-hash": "4114be8a0d21bc110947ad9550c52824",
+    "hash": "5434144bd3b528b5c4cb7a41b032d06e",
+    "content-hash": "33f1e4dc8564c81b5d8e08334133f722",
     "packages": [
         {
             "name": "iimog/biom-conversion-server",
-            "version": "v0.3.0",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/iimog/biom-conversion-server.git",
-                "reference": "2666a3e3db246566110fbb1fb7ac6f11b0d1d152"
+                "url": "https://github.com/molbiodiv/biom-conversion-server.git",
+                "reference": "ff2b3d1a53e8c395a606d9b6ab379c9c5660edda"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/iimog/biom-conversion-server/zipball/2666a3e3db246566110fbb1fb7ac6f11b0d1d152",
-                "reference": "2666a3e3db246566110fbb1fb7ac6f11b0d1d152",
+                "url": "https://api.github.com/repos/molbiodiv/biom-conversion-server/zipball/ff2b3d1a53e8c395a606d9b6ab379c9c5660edda",
+                "reference": "ff2b3d1a53e8c395a606d9b6ab379c9c5660edda",
                 "shasum": ""
             },
             "require-dev": {
@@ -44,7 +44,7 @@
                 }
             ],
             "description": "Conversion tool for the biom format",
-            "time": "2016-07-29 14:04:53"
+            "time": "2016-09-07 09:42:37"
         }
     ],
     "packages-dev": [],
