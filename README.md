@@ -1,23 +1,44 @@
 ![VizGallery](https://raw.githubusercontent.com/molbiodiv/Blackbird/master/viz_gallery.png)
 
-## About the original project
+## About Blackbird
 
-[Phinch](http://phinch.org/) is an open-source framework for visualizing biological data, funded by a grant from the [Alfred P. Sloan foundation](http://www.sloan.org/). This project represents an interdisciplinary collaboration between [Pitch Interactive](http://www.pitchinteractive.com/beta/index.php), a data visualization studio in Oakland, CA, and biological researchers at [UC Davis](http://www.ucdavis.edu/). Whether it's genes, proteins, or microbial species, Phinch provides an interactive visualization tool that allows users to explore and manipulate large biological datasets. 
-
-[Phinch](http://phinch.org/) is optimized for use in the Chrome browser. It currently supports downstream analyses of .biom files ([Biological Observation Matrix](http://biom-format.org/), a JSON-formatted file type typically used to represent marker gene OTUs or metagenomic data). All sample metadata and taxonomy/ontology information MUST be embedded in the .biom file before being uploaded. 
-
-## About this fork
-
-This fork addresses a couple of practical limitations. All changes are made available under the same license as the original project (BSD 2-clause). Here is an overview over the changes:
+This fork of Phinch addresses a couple of practical limitations.
+All changes are made available under the same license as the original project (BSD 2-clause).
+Here is an overview of the changes:
 
  - All desktop browsers are allowed (original project only allows Chrome)
  - [BIOM format](http://biom-format.org/) version 2 is supported (in addition to version 1) by integrating [biom-conversion-server](https://github.com/molbiodiv/biom-conversion-server) and [biojs-io-biom](https://github.com/molbiodiv/biojs-io-biom)
  - A few bugs are fixed (e.g. [Phinch#49](https://github.com/PitchInteractiveInc/Phinch/pull/49))
  - Shared links are not sent via email automatically
  - A docker image is provided for self hosting
- - Export is in svg rather than png format ([Phinch#43](https://github.com/PitchInteractiveInc/Phinch/issues/43))
+ - Export is possible as svg and png format ([Phinch#43](https://github.com/PitchInteractiveInc/Phinch/issues/43))
 
 I'll be happy to help port my changes back to the main project.
+
+## About the original project
+
+[Phinch](http://phinch.org/) is an open-source framework for visualizing biological data, funded by a grant from the [Alfred P. Sloan foundation](http://www.sloan.org/). This project represents an interdisciplinary collaboration between [Pitch Interactive](http://www.pitchinteractive.com/beta/index.php), a data visualization studio in Oakland, CA, and biological researchers at [UC Davis](http://www.ucdavis.edu/). Whether it's genes, proteins, or microbial species, Phinch provides an interactive visualization tool that allows users to explore and manipulate large biological datasets.
+
+[Phinch](http://phinch.org/) is optimized for use in the Chrome browser. It currently supports downstream analyses of .biom files ([Biological Observation Matrix](http://biom-format.org/), a JSON-formatted file type typically used to represent marker gene OTUs or metagenomic data). All sample metadata and taxonomy/ontology information MUST be embedded in the .biom file before being uploaded. 
+
+## Cite
+
+If you use Blackbird for your research please cite this repository (by doi, see below) as well as the following articles:
+> biojs-io-biom, a BioJS component for handling data in Biological Observation Matrix (BIOM) format.
+Ankenbrand M.J., Terhoeven N., Hohlfeld S., Förster F., and Keller A. (in preparation)
+
+and
+
+> Phinch: An interactive, exploratory data visualization framework for –Omic datasets.
+Holly M Bik, Pitch Interactive. bioRxiv 009944; [doi:10.1101/009944](http://dx.doi.org/10.1101/009944)
+
+  --------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ - Cite Project    [![Zenodo](https://zenodo.org/badge/12731/molbiodiv/blackbird.svg)](https://zenodo.org/badge/latestdoi/12731/molbiodiv/blackbird)
+ - License         [![BSD 2-Clause](https://img.shields.io/badge/License-BSD_2--Clause-blue.svg)](file:LICENSE)
+ - Docker          [![DockerPulls](https://img.shields.io/docker/pulls/iimog/blackbird.svg?maxAge=2592000)](https://hub.docker.com/r/iimog/blackbird/)
+
+  --------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 ## Data
 
