@@ -2,16 +2,18 @@
 
 ## About Blackbird
 
-This fork of Phinch addresses a couple of practical limitations.
+This fork is based on Phinch 1.1.2. It addresses a couple of practical limitations.
 All changes are made available under the same license as the original project (BSD 2-clause).
-Here is an overview of the changes:
+Here is an overview of the changes between Blackbird 1.2.0 and Phinch 1.1.2:
 
  - All desktop browsers are allowed (original project only allows Chrome)
  - [BIOM format](http://biom-format.org/) version 2 is supported (in addition to version 1) by integrating [biom-conversion-server](https://github.com/molbiodiv/biom-conversion-server) and [biojs-io-biom](https://github.com/molbiodiv/biojs-io-biom)
+ - Export is possible as svg and png format ([Phinch#43](https://github.com/PitchInteractiveInc/Phinch/issues/43))
+ - Dense biom format is supported (in addition to sparse, [Phinch#64](https://github.com/PitchInteractiveInc/Phinch/issues/64))
  - A few bugs are fixed (e.g. [Phinch#49](https://github.com/PitchInteractiveInc/Phinch/pull/49))
  - Shared links are not sent via email automatically
  - A docker image is provided for self hosting
- - Export is possible as svg and png format ([Phinch#43](https://github.com/PitchInteractiveInc/Phinch/issues/43))
+ - SQLite instead of MySQL is used
 
 I'll be happy to help port my changes back to the main project.
 

@@ -23,7 +23,8 @@ h1 { margin-bottom: 20px; font-weight: 400;}
 h2 { font-family: 'Karla', sans-serif; font-weight: 700;}
 td { border: 2px #ccc solid; color: #ababab; height: 26px;}
 #about h1 { margin-bottom: 10px;}
-.logo { float: left;}
+.logo { float: left; position: relative; ŝ}
+#blackbird_version { position: absolute; bottom: 0px; padding-left: 8px;}
 .logo img { margin: 0 0 0 20px;}
 #NotSupported { width: 800px; margin: auto; text-align: center; display: none;}
 
