@@ -49,7 +49,7 @@ class init
 			$("#GraphGallery .col3").off('click')
 			$('#goBackFilter').attr("disabled", "disabled")
 
-			hostURL = 'http://' + window.location.host + window.location.pathname.substr(0, window.location.pathname.lastIndexOf('/'))
+			hostURL = '//' + window.location.host + window.location.pathname.substr(0, window.location.pathname.lastIndexOf('/'))
 			shareURL = hostURL + "/server/getSharedData.php?shareID=" + results[1];
 			$.getJSON shareURL, (shareJSON) =>
 				console.log(shareJSON);

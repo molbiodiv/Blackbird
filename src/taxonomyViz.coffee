@@ -46,7 +46,7 @@ class taxonomyViz
 	phinchPalete = () -> return d3.scale.ordinal().range(fillCol);
 	globalColoring = phinchPalete()
 
-	backendServer = 'http://' + window.location.host + window.location.pathname.substr(0, window.location.pathname.lastIndexOf('/')) + "/server/"
+	backendServer = '//' + window.location.host + window.location.pathname.substr(0, window.location.pathname.lastIndexOf('/')) + "/server/"
 	filterOptionJSON = {}
 
 	constructor: (_VizID, _LayerID) ->
