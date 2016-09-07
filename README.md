@@ -85,3 +85,17 @@ The BSD 2-Clause License
 The Blackbird logo slightly resembles the Phinch logo using the Blackbird-Silhouette from [openclipart.org](https://openclipart.org/detail/220754/blackbird-silhouette) (public domain) and the Hanken font from [fontlibrary.org](https://fontlibrary.org/en/font/hanken) (SIL Open Font License).
 
 ![Blackbird Logo](https://raw.githubusercontent.com/molbiodiv/Blackbird/master/img/blackbird_logo.png)
+
+## Changes
+
+### v1.2.0
+
+ - First release as Blackbird (previously Phinch)
+ - All desktop browsers are allowed (original project only allows Chrome)
+ - [BIOM format](http://biom-format.org/) version 2 is supported (in addition to version 1) by integrating [biom-conversion-server](https://github.com/molbiodiv/biom-conversion-server) and [biojs-io-biom](https://github.com/molbiodiv/biojs-io-biom)
+ - Export is possible as svg and png format ([Phinch#43](https://github.com/PitchInteractiveInc/Phinch/issues/43))
+ - Dense biom format is supported (in addition to sparse, [Phinch#64](https://github.com/PitchInteractiveInc/Phinch/issues/64))
+ - A few bugs are fixed (e.g. [Phinch#49](https://github.com/PitchInteractiveInc/Phinch/pull/49))
+ - Shared links are not sent via email automatically
+ - A docker image is provided for self hosting
+ - SQLite instead of MySQL is used
