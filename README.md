@@ -40,7 +40,7 @@ and
 Holly M Bik, Pitch Interactive. bioRxiv 009944; [doi:10.1101/009944](http://dx.doi.org/10.1101/009944)
 
   --------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------
- - Cite Project    [![Zenodo](https://zenodo.org/badge/12731/molbiodiv/blackbird.svg)](https://zenodo.org/badge/latestdoi/12731/molbiodiv/blackbird)
+ - Cite Project    [![Zenodo](https://zenodo.org/badge/12731/molbiodiv/Blackbird.svg)](https://zenodo.org/badge/latestdoi/12731/molbiodiv/Blackbird)
  - License         [![BSD 2-Clause](https://img.shields.io/badge/License-BSD_2--Clause-blue.svg)](file:LICENSE)
  - Docker          [![DockerPulls](https://img.shields.io/docker/pulls/iimog/blackbird.svg?maxAge=2592000)](https://hub.docker.com/r/iimog/blackbird/)
 
