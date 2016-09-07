@@ -16,6 +16,6 @@
     "tests"
   ],
   "dependencies": {
-    "biojs-io-biom": "^1.0.0"
+    "biojs-io-biom": "^1.0.1"
   }
 }
