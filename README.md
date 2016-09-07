@@ -1,3 +1,8 @@
+## Server
+
+A public server is online at [https://blackbird.iimog.org]().
+But you can also host your own (see below).
+
 ![VizGallery](https://raw.githubusercontent.com/molbiodiv/Blackbird/master/viz_gallery.png)
 
 ## About Blackbird
