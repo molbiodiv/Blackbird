@@ -93,7 +93,11 @@ The Blackbird logo slightly resembles the Phinch logo using the Blackbird-Silhou
 
 ## Changes
 
-### v1.2.0
+### v1.2.1 (TBD)
+
+ - Add info and opt-out for Google Analytics
+
+### v1.2.0 (2016-09-07)
 
  - First release as Blackbird (previously Phinch)
  - All desktop browsers are allowed (original project only allows Chrome)
