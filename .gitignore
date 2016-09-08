@@ -1,7 +1,6 @@
 # Blog setting
 
 node_modules/
-biomFiles/
 
 #OS junk files
 [Tt]humbs.db
