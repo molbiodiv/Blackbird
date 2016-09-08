@@ -93,8 +93,9 @@ The Blackbird logo slightly resembles the Phinch logo using the Blackbird-Silhou
 
 ## Changes
 
-### v1.2.1 (TBD)
+### v1.2.1 (2016-09-08)
 
+ - Fix security problem
  - Add info and opt-out for Google Analytics
 
 ### v1.2.0 (2016-09-07)
