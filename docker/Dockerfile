@@ -50,5 +50,7 @@ RUN cp /var/www/html/server/dbconfig-sqlite.php /var/www/html/server/dbconfig.ph
 
 # Add custom php ini
 ADD php.ini /etc/php/7.0/apache2/php.ini
+# Add custom apache conf
+ADD apache2.conf /etc/apache2/apache2.conf
 
 CMD service apache2 start; while true; do sleep 60; done
