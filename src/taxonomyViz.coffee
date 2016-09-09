@@ -1722,6 +1722,7 @@ class taxonomyViz
 
 	downloadChartSVG: () =>
 		svg = $('svg')
+		svg.attr( "xmlns", "http://www.w3.org/2000/svg" );
 		svgStringData = svg.wrap('<p>').parent().html()
 		blob = new Blob([svgStringData], { type: "image/svg+xml;charset=utf-8" })
 		saveAs(blob, "Blackbird.svg");
