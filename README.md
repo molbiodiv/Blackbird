@@ -93,6 +93,10 @@ The Blackbird logo slightly resembles the Phinch logo using the Blackbird-Silhou
 
 ## Changes
 
+### v1.2.2 (TBD)
+
+ - Fix svg namespace
+
 ### v1.2.1 (2016-09-08)
 
  - Fix security problem
