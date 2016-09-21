@@ -166,3 +166,8 @@ a .icon-stack, a .icon-spin {display: inline-block;text-decoration: none;}
 .icon-remove:hover {color: #babcbe; cursor: pointer;}
 .icon-fa-level-up:hover { color: #babcbe; cursor: pointer;}
 .icon-fa-level-down:hover { color: #babcbe; cursor: pointer;}
+
+.footer_copyright {position: fixed; width: 100%; bottom: 0; font-size: 12px; line-height: 50px;color: #fff; background: #babcbe; padding-left: 20px; z-index: 3;}
+#footer_github {float: right; margin-right: 40px;}
+.footer_copyright a {text-decoration: none; color: #fff;}
+.footer_copyright a:hover {color: #241f20;}
