@@ -1,1 +1,3 @@
+<Files "blackbird.sqlite">
 deny from all
+</Files>
