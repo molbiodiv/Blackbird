@@ -14,6 +14,7 @@
     <meta property="og:image" content="img/phinch-logo.jpg">
     <meta property="og:site_name" content="PHINCH">
 
+    <script src="lib/jquery-1.10.1.min.js"></script>
     <!-- Google Analytics -->
     <script>
         var gaProperty = 'UA-83792433-2';
@@ -22,6 +23,24 @@
         var disableStr = 'ga-disable-' + gaProperty;
         if (document.cookie.indexOf(disableStr + '=true') > -1) {
             window[disableStr] = true;
+            $('document').ready(function () {
+                $('#ga-optout').hide();
+                $('#ga-optedout').show();
+            });
+        }
+
+        function openGaDialog() {
+            $('#dialog-ga').show();
+            $('#dialog-ga').dialog({ modal: true });
+            $('.ui-button-text').html('<i class="icon-remove icon-large"></i>');
+        }
+
+        // Opt-out function
+        function gaOptout() {
+            document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+            window[disableStr] = true;
+            $('#ga-optout').hide();
+            $('#ga-optedout').show();
         }
 
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -80,7 +99,7 @@
 
                 To label your samples with human-readable IDs in the visualizations, include a column in your metadata mapping file with the header labelled as “phinch”. These IDs will be pulled through into the visualizations to populate graph axes. If this column is not included, an arbitrary numerical ID will be assigned to each sample.</br></br>
 
-            </p>            
+            </p>
         </div>
     </section>
 
@@ -99,7 +118,7 @@
     </section>
 
     <section id = "bottom_sec">
-        
+
         <section id = "left_control_panel">
             <p class = "att_head" id = "att_head_dates">DATES</p>
             <div id = "dates" class="att_block"></div></br>
@@ -116,8 +135,15 @@
         </section>
 
     </section>
-    
-    <script src="lib/jquery-1.10.1.min.js"></script>
+
+    <section class = "footer_copyright">
+        Blackbird is a fork of Phinch (Copyright © 2014 Phinch, phinch.org).
+        This content is released under <a href="http://opensource.org/licenses/BSD-2-Clause" target="_blank">The BSD 2-Clause License</a>.&nbsp;&nbsp;
+        <a id="ga-optout" href="javascript:openGaDialog()">This site uses Google Analytics. Click here to learn more or opt-out.</a>
+        <span id="ga-optedout" style="display: none">Google Analytics is disabled for you.</span>
+        <span id="footer_github">&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/molbiodiv/Blackbird" target="_blank"><i class="icon-github icon-large"></i>&nbsp;&nbsp;Github</a></span>
+    </section>
+
     <script src="lib/jquery-ui-1.10.3.custom.min.js"></script>
     <script src="lib/indexedDB.polyfill.js"></script>
     <script src="lib/db.js"></script>
