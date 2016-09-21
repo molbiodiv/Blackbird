@@ -95,6 +95,8 @@ The Blackbird logo slightly resembles the Phinch logo using the Blackbird-Silhou
 
 ### v1.2.2 (TBD)
 
+ - Add footer to all pages
+ - Fix sharing permissions
  - Fix svg namespace
 
 ### v1.2.1 (2016-09-08)
