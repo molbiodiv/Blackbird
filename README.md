@@ -31,8 +31,8 @@ I'll be happy to help port my changes back to the main project.
 ## Cite
 
 If you use Blackbird for your research please cite this repository (by doi, see below) as well as the following articles:
-> biojs-io-biom, a BioJS component for handling data in Biological Observation Matrix (BIOM) format.
-Ankenbrand M.J., Terhoeven N., Hohlfeld S., Förster F., and Keller A. (in preparation)
+> Ankenbrand MJ, Terhoeven N, Hohlfeld S et al. biojs-io-biom, a BioJS component for handling data in Biological Observation Matrix (BIOM) format 
+[version 1; referees: awaiting peer review] F1000Research 2016, 5:2348; [doi:10.12688/f1000research.9618.1](http://dx.doi.org/10.12688/f1000research.9618.1)
 
 and
 
