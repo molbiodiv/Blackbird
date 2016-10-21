@@ -1,7 +1,7 @@
 # Blackbird is currently on hold
 The changes to Phinch introduced by Blackbird are going to be merged into the main Phinch project (see [#63](https://github.com/PitchInteractiveInc/Phinch/issues/63) and [#67](https://github.com/PitchInteractiveInc/Phinch/issues/67)).
 Blackbird will retire after those changes are merged. Future development will happen in the [Phinch repository](https://github.com/PitchInteractiveInc/Phinch) and it's [fork](https://github.com/molbiodiv/Phinch) 
-At [https://blackbird.iimog.org]() there is a preview of Phinch after merging the pull request.
+At [https://blackbird.iimog.org](https://blackbird.iimog.org) there is a preview of Phinch after merging the pull request.
 
 ## Server
 
